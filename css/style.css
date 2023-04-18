@@ -27,6 +27,7 @@ select {
   padding: 5px;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
 }
 option {
   text-align: center;
