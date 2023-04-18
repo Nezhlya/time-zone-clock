@@ -7,31 +7,43 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <title>World clock</title>
   </head>
   <body>
     <h1>World clock</h1>
     <div class="container">
-      <select>
-        <option value="0">Select a city</option>
-        <option value="1">Sydney</option>
-        <option value="2">Dubai</option>
-        <option value="3">London</option>
+      <select id="userCity">
+        <option value="">Select a city</option>
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Antarctica/Vostok">Vostok</option>
+        <option value="Asia/Bangkok">Bangkok</option>
+        <option value="Indian/Maldives">Maldives</option>
+        <option value="Asia/Dubai">Dubai</option>
+        <option value="Europe/Moscow">Moscow</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Atlantic/Reykjavik">Reykjavik</option>
+        <option value="America/Sao_Paulo">Sao Paulo</option>
+        <option value="America/Panama">Panama</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
       </select>
-      <div id="los-angeles" class="city">
-        <span class="date"></span>
-        <span class="time"></span>
-        <h2>Los Angeles</h2>
-      </div>
-      <div id="tokyo" class="city">
-        <span class="date"></span>
-        <span class="time"></span>
-        <h2>Tokyo</h2>
-      </div>
-      <div id="lisbon" class="city">
-        <span class="date"></span>
-        <span class="time"></span>
-        <h2>Lisbon</h2>
+      <div id="city">
+        <div id="los-angeles" class="city">
+          <span class="date"></span>
+          <span class="time"></span>
+          <h2>Los Angeles</h2>
+        </div>
+        <div id="tokyo" class="city">
+          <span class="date"></span>
+          <span class="time"></span>
+          <h2>Tokyo</h2>
+        </div>
+        <div id="london" class="city">
+          <span class="date"></span>
+          <span class="time"></span>
+          <h2>London</h2>
+        </div>
       </div>
     </div>
     <footer><a href="">Open-source code</a> by Nezhlya Emin</footer>
