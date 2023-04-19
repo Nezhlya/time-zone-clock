@@ -1,13 +1,44 @@
 body {
-  background-color: #cccccc4a;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  font-family: "Urbanist", sans-serif;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 footer {
   text-align: center;
   margin: 20px;
+  color: white;
+  letter-spacing: 7px;
+  font-size: 15px;
+  font-weight: 600;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: yellow;
 }
 h1 {
   text-align: center;
-  margin: 50px;
+  color: white;
+  letter-spacing: 30px;
+  margin-top: 50px;
+  font-size: 75px;
+}
+sub {
+  font-size: 50%;
 }
 
 div.container {
@@ -43,4 +74,9 @@ span.date {
 }
 div.city {
   padding: 5px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+#goBack {
+  color: black;
+  font-weight: 600;
 }

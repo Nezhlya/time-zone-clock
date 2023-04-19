@@ -44,7 +44,10 @@ function updateCityChange(event) {
             "h:mm:ss [<small>]A[</small>]"
           )}</span>
           <h2>${cityName}</h2>
-        </div>`;
+        </div>
+
+        <div>
+        <a id="goBack" href="/">All cities</a></div>`;
 }
 
 let updateCity = document.querySelector("#userCity");
